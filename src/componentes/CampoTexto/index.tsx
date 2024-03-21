@@ -6,6 +6,7 @@ interface CampoTextoProps {
     label: string
     valor: string
     obrigatorio?: boolean
+    tipo?: string
 }
 
 const CampoTexto = ({aoAlterado, label, placeholder, valor, obrigatorio = false}: CampoTextoProps) => {

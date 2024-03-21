@@ -28,3 +28,6 @@ Para abrir e rodar o projeto, execute `npm i` para instalar as dependências e `
 
 Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no seu navegador.
 
+## Deploy
+https://organo-ts-alura-rhgf.vercel.app/
+

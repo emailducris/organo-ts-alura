@@ -1,15 +1,15 @@
 import './CampoTexto.css'
 
 interface CampoTextoProps {
-    aoAlterado: (valor: string) => void; //Este type é uma arrow function que recebe um parametro do tipo 'string'.
+    aoAlterado: (valor: string) => void
     placeholder: string
     label: string
     valor: string
     obrigatorio?: boolean
-    tipo?: string
+    tipo?: 'text' | 'password' | 'date' | 'email' | 'number'
 }
 
-const CampoTexto = ({aoAlterado, label, placeholder, valor, obrigatorio = false}: CampoTextoProps) => {
+const CampoTexto = ({ aoAlterado, label, placeholder, valor, obrigatorio = false, tipo = 'text' } : CampoTextoProps) => {
 
     const placeholderModificada = `${placeholder}...` 
 
@@ -22,7 +22,13 @@ const CampoTexto = ({aoAlterado, label, placeholder, valor, obrigatorio = false}
             <label>
                 {label}
             </label>
-            <input value={valor} onChange={aoDigitado} required={obrigatorio} placeholder={placeholderModificada}/>
+            <input 
+                value={valor} 
+                onChange={aoDigitado} 
+                required={obrigatorio} 
+                placeholder={placeholderModificada}
+                type={tipo}
+            />
         </div>
     )
 }

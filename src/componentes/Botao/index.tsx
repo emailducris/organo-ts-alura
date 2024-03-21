@@ -1,15 +1,14 @@
-import { ReactElement } from "react";
-import "./Botao.css";
-import React from 'react';
+import { ReactElement } from 'react'
+import './Botao.css'
 
-interface BotaoProps{
-  children: ReactElement | string
+interface BotaoProps {
+    children: ReactElement | string
 }
 
 const Botao = (props: BotaoProps) => {
-  return <button className="botao">{props.children}</button>;
-};
+    return (<button className='botao'>
+        {props.children}
+    </button>)
+}
 
-export default Botao;
-
-
+export default Botao

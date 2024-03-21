@@ -28,6 +28,6 @@ Para abrir e rodar o projeto, execute `npm i` para instalar as dependências e `
 
 Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no seu navegador.
 
-## Deploy
+## https://pt.linkedin.com/pulse/padr%C3%B5es-de-commits-com-emojis-tornando-seus-mais-e-felipe-serra#:~:text=Deploy%3A-,%F0%9F%9A%80,-Exemplo%3A%20git Deploy
 https://organo-ts-alura-rhgf.vercel.app/
 
